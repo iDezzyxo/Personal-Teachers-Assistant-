@@ -1,0 +1,210 @@
+table{
+  border: 2px solid rgb(240, 147, 162);
+  border-collapse: collapse;
+  border-color: rgb(240, 147, 162);
+}
+
+tr, td {
+  border: 1px solid rgb(240, 147, 162);;
+}
+
+body{
+  background-image: url("https://media.giphy.com/media/MyWrJJIdAfoJuEPlLP/giphy.gif");
+  background-size: cover;
+  background-color: #181616;
+ 
+}
+header{
+  
+}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(240, 147, 162);
+  border-radius:10px;
+}
+nav li{
+  float: left;
+}
+nav a {
+  padding: 8px;
+  font-size: 1em;
+  text-transform: uppercase;
+
+}
+button{
+background-color: #438cec;
+padding: 10px;
+font-family: customfont, sans-serif;
+font-size: medium;
+width: 5%;
+
+}
+li a:hover {
+  background-color: #777676;
+}
+
+.h22{
+  font-family: customfont;
+  font-size: 50px;
+  color: black;
+  width: 800px;
+  
+  
+}
+label{
+  font-size: 20px;
+  color: black;
+}
+input{
+  width: 300px;
+  border-radius: 10px;
+}
+
+.navbar {
+position: fixed;
+width: 60px;
+display:block;
+margin: 10px auto;
+border: 4px solid #438cec;
+padding: 5px 10px;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+}
+
+.navbar div {
+height: 5px !important;
+background: #fff;
+margin: 7px 0px 7px 0px;
+border-radius: 25px;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+}
+
+.two {
+width: 35px;
+}
+
+.three {
+width: 50px;
+}
+
+.navbar:hover div {
+width: 60px;
+}
+
+.main{
+position: absolut;
+}
+
+.h22 span {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.h22:before,
+.h22:after {
+  content: '';
+  position: absolute;
+  top: 0.67em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: .4s,opacity .6s;
+  -moz-transition: .4s,opacity .6s;
+  -o-transition: .4s,opacity .6s;
+  transition: .4s,opacity .6s;
+}
+
+
+
+.h22:before {
+  content: attr(data-hover);
+  -webkit-transform: translate(-150%,0);
+  -moz-transform: translate(-150%,0);
+  -ms-transform: translate(-150%,0);
+  -o-transform: translate(-150%,0);
+  transform: translate(-150%,0);
+}
+
+
+
+.h22:after {
+  content: attr(data-active);
+  -webkit-transform: translate(150%,0);
+  -moz-transform: translate(150%,0);
+  -ms-transform: translate(150%,0);
+  -o-transform: translate(150%,0);
+  transform: translate(150%,0);
+}
+
+
+
+.h22:hover span,
+.h22:active span {
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+
+
+.h22:hover:before,
+.h22:active:after {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+
+
+.h22:active:before {
+  -webkit-transform: translate(-150%,0);
+  -moz-transform: translate(-150%,0);
+  -ms-transform: translate(-150%,0);
+  -o-transform: translate(-150%,0);
+  transform: translate(-150%,0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.zoomIn {
+color: black;
+width: 100px;
+height: 100px;
+animation: zoomIn;
+animation-duration: 5s;
+transform-origin: top center;
+}
+@keyframes zoomIn {
+from {opacity: 0;
+  transform: scale3d(0.3, 0.3, 0.3)}
+50% {opacity: 1}
+}
+h2{
+color: black;
+font-family: customfont;
+}
+@font-face {
+  font-family: customfont;
+  src: url(/attendancemarker/fonts/Alkatra-VariableFont_wght.ttf);
+}
